@@ -35,7 +35,7 @@
       <file leaf-file-name="routes.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="2" selection-start="277" selection-end="277" vertical-scroll-proportion="0.35840708" vertical-offset="0" max-vertical-offset="1188">
+            <state line="9" column="0" selection-start="239" selection-end="239" vertical-scroll-proportion="0.35840708" vertical-offset="0" max-vertical-offset="1224">
               <folding />
             </state>
           </provider>
@@ -59,8 +59,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="130" />
-    <option name="y" value="52" />
+    <option name="x" value="61" />
+    <option name="y" value="496" />
     <option name="width" value="1400" />
     <option name="height" value="848" />
   </component>
@@ -276,7 +276,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="130" y="52" width="1400" height="848" extended-state="0" />
+    <frame x="61" y="496" width="1400" height="848" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -339,7 +339,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="2" selection-start="277" selection-end="277" vertical-scroll-proportion="0.35840708" vertical-offset="0" max-vertical-offset="1188">
+        <state line="9" column="0" selection-start="239" selection-end="239" vertical-scroll-proportion="0.35840708" vertical-offset="0" max-vertical-offset="1224">
           <folding />
         </state>
       </provider>

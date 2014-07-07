@@ -3,13 +3,16 @@
  */
 
 $(document).ready(function (){
-    $.ajaxSuccess(function (){
-        alert('Item was deleted');
-        alert($(this).text());
-    });
+    $("a.del").ajaxSuccess(function () {
+        consloe.log('Item was deleted');
+    })
 
-    //$(document).on("ajax:success", "a.del", function (){
-      //  alert('Udało się');
+    $('a.del').click(function() {
+        console.log('test');
+    })
+
+    //$(document).on("ajax:success", "a.del",  function (){
+      //  alert('Udało się')
     //})
 
 });

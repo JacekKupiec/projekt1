@@ -18,7 +18,7 @@ $(document).ready(function () {
            if ($('#Komunikat').length > 0)
             $('#Komunikat').empty().append('otrzymano dane: '+ dane['status'] + "<br/>Tytuł: " + dane['title'] + "<br/>Tekst: " + dane['text']);
            else
-            $('body').append($('<d iv></div>').css('background-color', 'red').css('display','inline-block').attr('id', 'Komunikat')
+            $('body').append($('<div></div>').css('background-color', 'red').css('display','inline-block').attr('id', 'Komunikat')
                    .append('otrzymano dane: '+ dane['status'] + "<br/>Tytuł: " + dane['title'] + "<br/>Tekst: " + dane['text'])
             );
        });
@@ -38,20 +38,22 @@ $(document).ready(function () {
            var tekst = $('textarea').val();
            var params = { "article": {"title" : tytul, "text": tekst} }
 
-           console.log(tytul, tekst);
+           console.log(id_elementu, tytul, tekst);
 
            $.ajax({
                type: "PUT",
                url: id_elementu,
                data: params,
                success: function (dane) {
-                   $('a[href]='+id_elementu).parent().siblings().select()
+                   $('a.edit').parent().sibling('td.text').text(tekst);
+                   $('input').val("");
+                   $('textarea').val("");
+                   id_elementu = -1;
                },
-               error: function (dane) { console.log ('error'); }
+               error: function (dane) { console.log ('error'); id_elementu = -1; }
            });
        }
 
-       id_elementu = -1;
        $('form.edit').hide();
    });
 });

@@ -14,3 +14,4 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require my_ajax
+//= require my_jquerry

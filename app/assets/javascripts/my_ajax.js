@@ -36,15 +36,18 @@ $(document).ready(function () {
        {
            var tytul = $('input').val();
            var tekst = $('textarea').val();
+           var params = { "article": {"title" : tytul, "text": tekst} }
 
            console.log(tytul, tekst);
 
            $.ajax({
-               type: "PATCH",
+               type: "PUT",
                url: id_elementu,
-               data: { title: tytul, text:tekst},
-               success: function (dane) { console.log('item changed'); },
-               error: function (dane) { console.log (dane); }
+               data: params,
+               success: function (dane) {
+                   $('a[href]='+id_elementu).parent().siblings().select()
+               },
+               error: function (dane) { console.log ('error'); }
            });
        }
 

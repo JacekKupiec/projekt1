@@ -52,10 +52,11 @@ class ArticlesController < ApplicationController
       if request.xhr?
         render :json => {:status => "fail"}
       else
-        render 'edit' 
+        render 'edit'
       end
     end
   end
+
 
   def destroy
     @article = Article.find params[:id]

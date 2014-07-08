@@ -53,7 +53,7 @@
       <file leaf-file-name="my_ajax.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/my_ajax.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="26" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.6525" vertical-offset="0" max-vertical-offset="800">
+            <state line="20" column="7" selection-start="847" selection-end="847" vertical-scroll-proportion="0.45743328" vertical-offset="0" max-vertical-offset="787">
               <folding />
             </state>
           </provider>
@@ -835,7 +835,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/my_ajax.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="26" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.6525" vertical-offset="0" max-vertical-offset="800">
+        <state line="20" column="7" selection-start="847" selection-end="847" vertical-scroll-proportion="0.45743328" vertical-offset="0" max-vertical-offset="787">
           <folding />
         </state>
       </provider>

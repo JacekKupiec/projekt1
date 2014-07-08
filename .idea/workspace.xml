@@ -26,16 +26,7 @@
       <file leaf-file-name="articles_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/articles_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="40" selection-start="633" selection-end="633" vertical-scroll-proportion="0.0" vertical-offset="64" max-vertical-offset="1206">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/articles/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="324">
+            <state line="53" column="9" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.0" vertical-offset="316" max-vertical-offset="1152">
               <folding />
             </state>
           </provider>
@@ -44,8 +35,10 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/articles/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="58" selection-start="280" selection-end="280" vertical-scroll-proportion="-7.3333335" vertical-offset="0" max-vertical-offset="450">
-              <folding />
+            <state line="19" column="61" selection-start="783" selection-end="783" vertical-scroll-proportion="-12.666667" vertical-offset="0" max-vertical-offset="522">
+              <folding>
+                <element signature="n#style#0;n#form#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,7 +46,7 @@
       <file leaf-file-name="my_ajax.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/my_ajax.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="7" selection-start="847" selection-end="847" vertical-scroll-proportion="0.45743328" vertical-offset="0" max-vertical-offset="787">
+            <state line="43" column="38" selection-start="1418" selection-end="1418" vertical-scroll-proportion="0.68956405" vertical-offset="252" max-vertical-offset="1026">
               <folding />
             </state>
           </provider>
@@ -85,8 +78,8 @@
         <option value="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/my_jquerry.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/views/articles/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/articles_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/articles/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/my_ajax.js" />
       </list>
     </option>
@@ -511,7 +504,9 @@
     <entry file="file://$PROJECT_DIR$/app/views/articles/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#form#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -579,7 +574,9 @@
     <entry file="file://$PROJECT_DIR$/app/views/articles/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#form#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -631,7 +628,9 @@
     <entry file="file://$PROJECT_DIR$/app/views/articles/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#form#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -731,13 +730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/articles/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="800">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="204" selection-end="204" vertical-scroll-proportion="0.1125" vertical-offset="0" max-vertical-offset="800">
@@ -748,13 +740,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/articles/new.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0931436" vertical-offset="0" max-vertical-offset="773">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/articles/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="800">
           <folding />
         </state>
       </provider>
@@ -812,9 +797,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/articles/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/articles/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="58" selection-start="280" selection-end="280" vertical-scroll-proportion="-7.3333335" vertical-offset="0" max-vertical-offset="450">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="558">
           <folding />
         </state>
       </provider>
@@ -826,16 +811,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/articles/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="800">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/articles_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="40" selection-start="633" selection-end="633" vertical-scroll-proportion="0.0" vertical-offset="64" max-vertical-offset="1206">
+        <state line="53" column="9" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.0" vertical-offset="316" max-vertical-offset="1152">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/articles/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="61" selection-start="783" selection-end="783" vertical-scroll-proportion="-12.666667" vertical-offset="0" max-vertical-offset="522">
+          <folding>
+            <element signature="n#style#0;n#form#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/my_ajax.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="7" selection-start="847" selection-end="847" vertical-scroll-proportion="0.45743328" vertical-offset="0" max-vertical-offset="787">
+        <state line="43" column="38" selection-start="1418" selection-end="1418" vertical-scroll-proportion="0.68956405" vertical-offset="252" max-vertical-offset="1026">
           <folding />
         </state>
       </provider>

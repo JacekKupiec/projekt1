@@ -50,11 +50,8 @@ class ArticlesController < ApplicationController
     render :json => {:status => "ok"}
 
   end
-  private
-  def article_params
-    params.require(:article).permit(:title, :text)
-  end
 
+  private
   def article_params
     params.require(:article).permit(:title, :text)
   end

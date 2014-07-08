@@ -20,6 +20,9 @@ class ArticlesController < ApplicationController
 
   def show
     @article = Article.find params[:id]
+    if request.xhr?
+      render :json => {:status => "ok", :title => @article.title, :text => @article.text}
+    end
   end
 
   def edit

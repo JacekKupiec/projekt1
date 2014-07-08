@@ -42,10 +42,17 @@ class ArticlesController < ApplicationController
 
 
     if @article.update(article_params)
+
       if request.xhr?
-
+        render :json => {:status => "ok"}
       else
-
+        redirect_to @article
+      end
+    else
+      if request.xhr?
+        render :json => {:status => "fail"}
+      else
+        render 'edit' 
       end
     end
   end

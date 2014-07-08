@@ -42,7 +42,7 @@ $(document).ready(function () {
            $.ajax({
                type: "PATCH",
                url: id_elementu,
-               data: { },
+               data: { title: tytul, text:tekst},
                success: function (dane) { console.log('item changed'); },
                error: function (dane) { console.log (dane); }
            });

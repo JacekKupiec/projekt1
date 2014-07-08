@@ -32,10 +32,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="articles_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="articles_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/articles_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="4" selection-start="901" selection-end="901" vertical-scroll-proportion="0.0" vertical-offset="334" max-vertical-offset="1278">
+            <state line="54" column="22" selection-start="1075" selection-end="1075" vertical-scroll-proportion="0.6625" vertical-offset="442" max-vertical-offset="1404">
               <folding />
             </state>
           </provider>
@@ -52,10 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my_ajax.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="my_ajax.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/my_ajax.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="8" selection-start="1594" selection-end="1594" vertical-scroll-proportion="0.85974026" vertical-offset="4" max-vertical-offset="864">
+            <state line="44" column="47" selection-start="1456" selection-end="1456" vertical-scroll-proportion="-19.666666" vertical-offset="4" max-vertical-offset="864">
               <folding>
                 <element signature="e#263#913#0" expanded="false" />
               </folding>
@@ -90,8 +90,8 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/my_jquerry.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/articles/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/articles_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/my_ajax.js" />
+        <option value="$PROJECT_DIR$/app/controllers/articles_controller.rb" />
       </list>
     </option>
   </component>
@@ -824,13 +824,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/articles/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="558">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/articles/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="77" selection-start="449" selection-end="449" vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="522">
@@ -840,19 +833,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/articles_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/my_ajax.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="4" selection-start="901" selection-end="901" vertical-scroll-proportion="0.0" vertical-offset="334" max-vertical-offset="1278">
+        <state line="44" column="47" selection-start="1456" selection-end="1456" vertical-scroll-proportion="-19.666666" vertical-offset="4" max-vertical-offset="864">
+          <folding>
+            <element signature="e#263#913#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/articles/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="558">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/my_ajax.js">
+    <entry file="file://$PROJECT_DIR$/app/controllers/articles_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="8" selection-start="1594" selection-end="1594" vertical-scroll-proportion="0.85974026" vertical-offset="4" max-vertical-offset="864">
-          <folding>
-            <element signature="e#263#913#0" expanded="false" />
-          </folding>
+        <state line="54" column="22" selection-start="1075" selection-end="1075" vertical-scroll-proportion="0.6625" vertical-offset="442" max-vertical-offset="1404">
+          <folding />
         </state>
       </provider>
     </entry>

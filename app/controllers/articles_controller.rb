@@ -29,17 +29,7 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
 
     if request.xhr?
-      if @article.update(article_params)
-        if @article.errors.any?
-          bledy = ""
-          @article.errors.each do |e|
-              bledy += "<br/>" + e.to_s
-          end
-          render :json => { :status => "fail", :bledy => bledy }
-        end
-      else
-        render :json => { :status => "ok"}
-      end
+      render :json => {:status => "ok"}
     end
   end
 
@@ -50,10 +40,13 @@ class ArticlesController < ApplicationController
   def update
     @article = Article.find(params[:id])
 
+
     if @article.update(article_params)
-      redirect_to @article
-    else
-      render 'edit'
+      if request.xhr?
+
+      else
+
+      end
     end
   end
 

@@ -27,7 +27,7 @@ $(document).ready(function () {
    $("a.edit").click(function () {
       $('form.edit').show();
       id_elementu = $(this).attr('href');
-      //id_elementu = id_elementu.slice(0, id_elementu.length - 5);
+      id_elementu = id_elementu.slice(0, id_elementu.length - 5);
       console.log(id_elementu);
    });
 
@@ -39,20 +39,16 @@ $(document).ready(function () {
 
            console.log(tytul, tekst);
 
-           $.get(id_elementu,
-               {
-                    title : tytul,
-                    text : tekst
-               },
-           function (dane) {
-               if (dane['status'] == 'ok')
-                console.log('zmieniono dane');
+           $.ajax({
+               type: "PATCH",
+               url: id_elementu,
+               data: { },
+               success: function (dane) { console.log('item changed'); },
+               error: function (dane) { console.log (dane); }
            });
        }
 
        id_elementu = -1;
        $('form.edit').hide();
    });
-
-
 });

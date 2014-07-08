@@ -3,16 +3,15 @@
  */
 
 $(document).ready(function (){
-    $(document).ajaxSuccess(function () {
+    /*$(document).ajaxSuccess(function () {
         console.log('Item was deleted');
     })
 
-    /*$('a.del').click(function() {
+    $('a.del').click(function() {
         console.log('test');
     })*/
 
-   /* $(document).on("ajax:success", "a.del",  function (){
-
-    })*/
-
+   $(document).on("ajax:success", "a.del",  function (){
+       $(this).parent('tr').remove();
+   });
 });

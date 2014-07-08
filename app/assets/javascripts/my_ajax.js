@@ -7,9 +7,10 @@ $(document).ready(function () {
 
    $('form.edit').hide();
 
-   $(document).on("click", "a.del",  function (){
+   $(document).on("ajax:success", "a.del",  function (){
        $(this).parent().parent().remove();
    })
+
    $("a.show").click(function(){
       var href_val = $(this).attr('href').split('/');
 
@@ -17,16 +18,17 @@ $(document).ready(function () {
            if ($('#Komunikat').length > 0)
             $('#Komunikat').empty().append('otrzymano dane: '+ dane['status'] + "<br/>Tytuł: " + dane['title'] + "<br/>Tekst: " + dane['text']);
            else
-            $('body').append($('<div></div>').css('background-color', 'red').css('display','inline-block').attr('id', 'Komunikat')
+            $('body').append($('<d iv></div>').css('background-color', 'red').css('display','inline-block').attr('id', 'Komunikat')
                    .append('otrzymano dane: '+ dane['status'] + "<br/>Tytuł: " + dane['title'] + "<br/>Tekst: " + dane['text'])
             );
        });
-   });
+   })
 
    $("a.edit").click(function () {
       $('form.edit').show();
       id_elementu = $(this).attr('href');
-       console.log(id_elementu);
+      //id_elementu = id_elementu.slice(0, id_elementu.length - 5);
+      console.log(id_elementu);
    });
 
    $("button").click(function() {
@@ -37,16 +39,20 @@ $(document).ready(function () {
 
            console.log(tytul, tekst);
 
-           $.ajax({
-             type: "Patch",
-             url: id_elementu,
-             data: {title: tytul, text: tekst},
-             success: function(dane) {},
-             error: function (dane) { alert ('Błąd'); }
+           $.get(id_elementu,
+               {
+                    title : tytul,
+                    text : tekst
+               },
+           function (dane) {
+               if (dane['status'] == 'ok')
+                console.log('zmieniono dane');
            });
        }
-       else alert('Nie wybrano żadnego elementu!');
 
+       id_elementu = -1;
        $('form.edit').hide();
    });
+
+
 });

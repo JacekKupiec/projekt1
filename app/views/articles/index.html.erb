@@ -1,3 +1,5 @@
+
+
 <h1>Wszystkie artykuły</h1>
 <table>
   <th>Title</th><th>Text</th>
@@ -8,7 +10,7 @@
       <td> <%= article.text %></td>
       <td><%= link_to 'Show', article_path(article) %></td>
       <td><%= link_to 'Edit', edit_article_path(article) %></td>
-      <td><%= link_to 'Destroy', article_path(article), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <td><%= link_to 'Destroy', article_path(article), method: :delete, data: { confirm: 'Are you sure?' }, remote: true, class: "del" %></td>
     </tr>
   <% end %>
 

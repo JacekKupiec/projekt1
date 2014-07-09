@@ -12,9 +12,10 @@ $(document).ready(function () {
    })
 
    $("a.show").click(function(){
-      var href_val = $(this).attr('href').split('/');
+      var href = $(this).attr('href').split('/');
+      var id = href[href.length - 1];
 
-       $.get('/articles/' + $(this).attr('href').split('/')[href_val.length - 1], function (dane){
+       $.get($(this).attr('href'), function (dane){
            if ($('#Komunikat').length > 0)
             $('#Komunikat').empty().append('otrzymano dane: '+ dane['status'] + "<br/>Tytuł: " + dane['title'] + "<br/>Tekst: " + dane['text']);
            else
@@ -48,8 +49,8 @@ $(document).ready(function () {
                        if (dane['status'] === "ok")
                        {
                            $("a[href='"+id_elementu+"']").parent().siblings('td.text').text(tekst).siblings('td.title').text(tytul);
-                           if ($('#Blad').length > 0)
-                                $("#Blad").remove();
+                           $("#Blad").remove();
+                           //$("a[href='" + id_elementu + "'].show").click();
                        }
                        else if (dane['status'] === "fail")
                        {

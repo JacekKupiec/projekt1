@@ -18,7 +18,7 @@ $(document).ready(function () {
            if ($('#Komunikat').length > 0)
             $('#Komunikat').empty().append('otrzymano dane: '+ dane['status'] + "<br/>Tytuł: " + dane['title'] + "<br/>Tekst: " + dane['text']);
            else
-            $('body').append($('<div></div>').css('background-color', 'red').css('display','inline-block').attr('id', 'Komunikat')
+            $('body').append($('<div></div>').css('background-color', 'yellow').css('display','inline-block').attr('id', 'Komunikat')
                    .append('otrzymano dane: '+ dane['status'] + "<br/>Tytuł: " + dane['title'] + "<br/>Tekst: " + dane['text'])
             );
        });
@@ -38,19 +38,36 @@ $(document).ready(function () {
            var tekst = $('textarea').val();
            var params = { "article": {"title" : tytul, "text": tekst} }
 
-           console.log(id_elementu, tytul, tekst);
+           console.log(id_elementu, tytul, tekst, "a[href='"+id_elementu+"']");
+           console.log(id_elementu, tytul, tekst, "a[href='"+id_elementu+"']");
 
            $.ajax({
                type: "PUT",
                url: id_elementu,
                data: params,
-               success: function (dane) {
-                   $('a.edit').parent().sibling('td.text').text(tekst);
+                   success: function (dane) {
+                       if (dane['status'] === "ok")
+                       {
+                           $("a[href='"+id_elementu+"']").parent().siblings('td.text').text(tekst).siblings('td.title').text(tytul);
+                           if ($('#Blad').length > 0)
+                                $("#Blad").remove();
+                       }
+                       else if (dane['status'] === "fail")
+                       {
+                            if ($('#Blad').length > 0)
+                                $("#Blad").empty().append("Liczba błądów: " + dane['err_num'] + "<br/>" + dane['err_msg']);
+                           else
+                            {
+                                $("#Blad")append($("<div></div>").attr("id","Blad").css('background-color',"red").append("Liczba błądów: " + dane['err_num'] + "<br/>" + dane['err_msg']));
+                            }
+                       }
+                   }
+
                    $('input').val("");
                    $('textarea').val("");
                    id_elementu = -1;
                },
-               error: function (dane) { console.log ('error'); id_elementu = -1; }
+               error: function (dane) { console.log (dane['error_msg'], dane[err_num]); id_elementu = -1; }
            });
        }
 

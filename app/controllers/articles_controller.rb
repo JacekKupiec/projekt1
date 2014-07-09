@@ -50,7 +50,7 @@ class ArticlesController < ApplicationController
       end
     else
       if request.xhr?
-        render :json => {:status => "fail"}
+        render :json => {:status => "fail", :err_num => @article.errors.count, :err_msg => @article.errors.full_messages}
       else
         render 'edit'
       end

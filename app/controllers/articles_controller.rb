@@ -42,7 +42,6 @@ class ArticlesController < ApplicationController
 
 
     if @article.update(article_params)
-
       if request.xhr?
         render :json => {:status => "ok"}
       else
@@ -50,13 +49,16 @@ class ArticlesController < ApplicationController
       end
     else
       if request.xhr?
-        render :json => {:status => "fail", :err_num => @article.errors.count, :err_msg => @article.errors.full_messages}
+        errors = String.new
+
+        @article.errors.full_messages.each do |msg| errors += "<br/>" + msg end
+
+        render :json => {:status => "fail", :err_num => @article.errors.count, :err_msg => errors.to_s}
       else
         render 'edit'
       end
     end
   end
-
 
   def destroy
     @article = Article.find params[:id]

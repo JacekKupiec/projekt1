@@ -24,22 +24,21 @@ $(document).ready(function () {
        });
    })
 
-   $("a.edit").click(function () {
+   $("button.edit").click(function () {
       $('form.edit').show();
-      id_elementu = $(this).attr('href');
-      id_elementu = id_elementu.slice(0, id_elementu.length - 5);
+      id_elementu = $(this).parent().siblings("td").last().children("a").attr("href");
+      //id_elementu = id_elementu.slice(0, id_elementu.length - 5);
       console.log(id_elementu);
    });
 
-   $("button").click(function() {
+   $("form.edit button").click(function() {
        if (id_elementu != -1)
        {
            var tytul = $('input').val();
            var tekst = $('textarea').val();
            var params = { "article": {"title" : tytul, "text": tekst} }
 
-           console.log(id_elementu, tytul, tekst, "a[href='"+id_elementu+"']");
-           console.log(id_elementu, tytul, tekst, "a[href='"+id_elementu+"']");
+           console.log('kliknięty przycisk');
 
            $.ajax({
                type: "PUT",
@@ -54,20 +53,23 @@ $(document).ready(function () {
                        }
                        else if (dane['status'] === "fail")
                        {
+                           console.log('fails', dane['err_num'], dane['err_msg']);
                             if ($('#Blad').length > 0)
-                                $("#Blad").empty().append("Liczba błądów: " + dane['err_num'] + "<br/>" + dane['err_msg']);
+                            {
+                                $("#Blad").empty().append("Liczba błądów: " + dane['err_num'] + dane['err_msg']);
+                            }
                            else
                             {
-                                $("#Blad")append($("<div></div>").attr("id","Blad").css('background-color',"red").append("Liczba błądów: " + dane['err_num'] + "<br/>" + dane['err_msg']));
+                                $("body").append( $("<div></div>").attr("id","Blad").css('background-color',"red").css("display","inline-block").
+                                    append("Liczba błądów: " + dane['err_num'] + dane['err_msg']) );
                             }
                        }
-                   }
 
                    $('input').val("");
                    $('textarea').val("");
                    id_elementu = -1;
                },
-               error: function (dane) { console.log (dane['error_msg'], dane[err_num]); id_elementu = -1; }
+               error: function (dane) { console.log (dane['error_msg'], dane['err_num']); id_elementu = -1; }
            });
        }
 
